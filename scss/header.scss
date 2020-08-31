@@ -1,0 +1,341 @@
+
+// Container with no padding for navbar
+
+
+
+main{
+  margin-top: 104px;
+  @media screen and (max-width: $tablet){
+      margin-top: 94px;
+
+  }
+}
+.menu-toggle {
+  margin-top: 3px;
+    width: 45px;
+    display: block;
+}
+.menu-toggle  {
+
+  span{
+    width: 100%;
+    height: 3px;
+    display: block;
+    margin-bottom: 15px;
+    @media screen and (max-width:768px){
+      margin-bottom: 10px;
+    }
+    background: #BB913B;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.13);
+  z-index: 9999;
+  height: 108px;
+  @media screen and (max-width:768px){
+    height: 75px;
+  }
+  box-sizing: border-box;
+  background-color: #fff;
+
+  
+  @media screen and (max-width: $tablet){
+    //height: 75px;
+  }
+  @media screen and (max-width: $mobile){
+    //height: 60px;
+  }
+  // box-shadow: 0 1px 4px rgba(0, 0, 0, 0.23);
+
+  // .header__container
+
+  &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      @media screen and (max-width:565px){
+        flex-direction: row-reverse;
+      }
+      
+  }
+
+  // .header__wr-logo
+
+  &__wr-logo {
+      max-width: 200px;
+    
+      img{
+          width: 100%;
+      }
+      @media screen and (max-width: $tablet){
+        max-width: 180px;
+      }
+      @media screen and (max-width: $mobile){
+        max-width: 150px;
+      }
+      
+  }
+
+  // .header__wr-nav
+
+  &__wr-nav {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid  #707070;;
+    max-width: 260px;
+    width: 100%;
+    justify-content: center;
+    @media screen and (max-width:1280px){
+      max-width: 190px;
+    }
+    @media screen and (max-width:565px){
+      max-width: unset;
+      width: unset;
+      padding: 30px;
+      border-left: 1px solid  #707070;;
+      border-right: none;
+    }
+    @media screen and (max-width:400px){
+      padding: 20px;
+    }
+  }
+  
+  // .header__nav
+
+  &__nav {
+    height: 100%;
+    @media screen and (max-width: 1921px){
+      height: unset;
+    }
+  }
+
+  // .header__wr-burger
+
+  &__wr-burger {
+      display: none;
+      @media screen and (max-width: 1921px){
+          display: flex;
+      }
+
+  }
+}
+.nav-links{
+  padding-left: 30px;
+  
+  @media screen and (max-width: $tablet){
+   padding-left: 0px;
+   margin-right: 0px;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 1921px){
+      display: flex !important;
+  }
+  @media screen and (max-width: 1921px){
+      display: none;
+      position: absolute;
+      top: 108px;
+      left: 0;
+      width: 100%;
+      background-color: #ffff;
+      padding: 0 0 25px;
+      box-sizing: border-box;
+      box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.13);
+  }
+  @media screen and (max-width: $tablet){
+   //top: 75px;
+  }
+  @media screen and (max-width: $mobile){
+     // top: 60px;
+  }
+  
+  ul{
+    height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media screen and (max-width: 1921px){
+          flex-direction: column;
+      }
+    
+  }
+  li{
+    
+    height: 100%;
+      font-family: Arial;
+      font-style: normal;
+      
+      font-size: 14px;
+      line-height: 16px;
+      
+      /* identical to box height */
+      
+    text-transform: uppercase;
+      color: #000;
+      margin-right: 20px;
+      position: relative;
+      box-sizing: border-box;
+      a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+      a:after {
+        position: absolute;
+        content: '';
+        
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0px;
+        background-color: #009344;
+        
+        transition: height .25s ;
+    }
+    a:hover, a:focus {
+      text-shadow: 0px 0px 1px #061622;
+    }
+    a:focus::after {
+      height: 3px;
+    }
+    a:hover:after {
+      
+      height: 3px;
+     
+      
+      transition: height .25s ;
+    }
+    
+
+	 /* optional hover classes used with anmiation */
+	  
+      @media screen and (max-width: 1921px){
+          margin-right: 0;
+          
+          width: 100%;
+          padding: 0 15px;
+
+      }
+      &:last-child{
+        margin-right: 0px;
+          @media screen and (max-width: $tablet){
+              
+
+          }
+      }
+      a{
+          text-align: center;
+         
+          color: #000;
+          @media screen and (max-width: 1921px){
+              padding: 10px 0;
+              display: block;
+              
+          }
+
+      }
+  }
+  // .nav__btn
+  
+ 
+}
+.topp-header {
+  background-color: #fafafa;
+  box-sizing: border-box;
+  
+}
+
+.header__wr-nav.active .menu-toggle span{
+  
+    margin-bottom: 15px;
+  @media screen and (max-width:768px){
+    margin-bottom: 10px;
+  }
+  &:last-child{
+    margin-bottom: 0px;
+  }
+}
+.menu-txt {
+  margin-left: 20px;
+  font-size : 22px;
+  @media screen and (max-width:565px){
+    display: none;
+  }
+}
+.burger-block {
+  display: flex;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.logo-class {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  img {
+    max-width: 303px;
+    width: 100%;
+    @media screen and (max-width:565px){
+      margin-right: auto;
+    }
+  }
+  @media screen and (max-width:1540px){
+    position: relative;
+  }
+  @media screen and (max-width:768px){
+    img {
+      height: 71px;
+    }
+  }
+}
+.buttons {
+  max-width: 507px;
+  display: flex;
+  width: 100%;
+  @media screen and (max-width:991px){
+    display: none;
+  }
+  .green-but {
+    margin-right: 20px;
+    @media screen and(max-width:1280px) {
+      max-width: 150px;
+      font-size: 13px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .green-but-cust {
+    background: #2F3256;
+    max-width: 255px;
+    img {
+      margin-right: 10px;
+      width: 25px;
+      height: 30px;
+    }
+  }
+}

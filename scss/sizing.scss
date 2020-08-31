@@ -1,0 +1,26 @@
+$container: 1788px;
+$tablet: 991px;
+$tablet-small: 767px;
+$mobile: 575px;
+$mobile-small: 370px;
+$container-fluid: 1920;
+.container {
+    max-width: $container;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.container_fluid{
+    max-width: #{$container-fluid + px};
+}
+.header-container {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 20px;
+    @media screen and (max-width:565px){
+        padding: 0px;
+    }
+    margin: 0 auto;
+    box-sizing: border-box;
+}
