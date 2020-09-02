@@ -2,7 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+@mixin fluid-font($min, $max) {
+	font-size: calc((#{$min+px}) + (#{$max} - #{$min}) * ((100vw - 320px) / (1920 - 320)));
+	line-height: calc( 5px + (#{$min+px}) + (#{$max} - #{$min}) * ((100vw - 320px) / (1920 - 320)));
+  }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -72,21 +75,21 @@ p {
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
-line-height: 33px;
+line-height: 25px;
 /* identical to box height, or 206% */
 
 
 
 color: #2F3256;
-margin-bottom: 30px;
+
 
 }
 h1 {
 	font-family: Average;
 font-style: normal;
 font-weight: normal;
-font-size: 110px;
-line-height: 97px;
+@include fluid-font(34,110 );
+
 /* identical to box height, or 88% */
 
 
@@ -97,12 +100,36 @@ h2 {
 	font-family: Average;
 font-style: normal;
 font-weight: normal;
-font-size: 62.2269px;
-line-height: 61px;
+@include fluid-font(30,62 );
+
 /* identical to box height, or 98% */
+
+
+
+color: #2F3256;
+}
+h4 {
+	font-family: Average;
+
+@include fluid-font(24, 42);
+/* identical to box height, or 156% */
 
 display: flex;
 align-items: center;
+
+color: #2F3256;
+}
+h3{
+	font-family: Average;
+
+@include fluid-font(26, 46);
+line-height: 61px;
+/* identical to box height, or 133% */
+
+display: flex;
+align-items: center;
+
+/* blue */
 
 color: #2F3256;
 }

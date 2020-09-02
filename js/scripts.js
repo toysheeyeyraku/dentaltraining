@@ -18,8 +18,54 @@ $(document).ready(function () {
       }
   }
   //end menu - include
-
-  
+  $('.slider2').slick({
+    infinite: true,
+    dots: true,
+    slidesToShow: 3,
+    prevArrow: $('.sl33'),
+    nextArrow: $('.sl22'),
+    responsive: [
+        {
+            breakpoint: 1280, // tablet breakpoint
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 767, // tablet breakpoint
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+   
+  });
+  $('.slider-blocks').slick({
+    infinite: true,
+    
+    slidesToShow: 3,
+    prevArrow: $('.slider-block-1'),
+    nextArrow: $('.slider-block-2'),
+    responsive: [
+        {
+            breakpoint: 1612, // tablet breakpoint
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 991, // tablet breakpoint
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+   
+  });
         
 });
 
