@@ -75,7 +75,7 @@ p, a {
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
-line-height: 25px;
+line-height: 33px;
 /* identical to box height, or 206% */
 
 
@@ -132,4 +132,16 @@ align-items: center;
 /* blue */
 
 color: #2F3256;
+}
+h6 {
+    font-family: Average;
+
+    @include fluid-font(16,26);
+    line-height: 35px;
+/* identical to box height, or 187% */
+
+
+}
+img {
+	height: auto;
 }
