@@ -1,0 +1,174 @@
+.photos {
+    position: relative;
+    height: 1318px;
+    .img-bg {
+        img {
+            object-position: left;
+        }
+    }
+    @media screen and (max-width:991px) {
+        height: 1048px;
+    }
+    .inner {
+        padding-top: 150px;
+        @media screen and (max-width:991px) {
+            padding-top: 100px;
+        }
+    }
+    h5 {
+        max-width: 1530px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+        @media screen and (max-width:991px) {
+            font-size: 30.8906px;
+	        line-height: 45px;
+        }
+    }
+    .green-but {
+        max-width: 230px;
+        margin: 0 auto;
+    }
+}
+.meet-me-harley {
+    overflow: visible;
+    .inner {
+        .second {
+            margin-left: 0px;;
+            margin-right: 0px;
+            width: 50%;
+            .img-bg{
+                img {
+                    object-position: center;
+                    width: 100%;
+                }
+            }
+            img {
+                position: unset;
+                width: unset;
+            }
+            @media screen and (max-width:1280px) {
+                height: 1129px;
+                width: 100vw;
+                margin-left: -20px;
+            }
+            position: relative;
+            .circle-img {
+                position: absolute;
+                top: 20%;
+                left: -175px;
+                z-index: 10;
+                height: 560px;
+                width: 560px;
+                @media screen and (max-width:1280px) {
+                    top: 30%;
+                    left: -50px
+                }
+            }
+            .first-absolute {
+                filter: drop-shadow(-22.4px 8.6px 35px rgba(86, 97, 105, 0.14));
+                z-index: 1000;
+                max-width: 359px;
+                height: 317px;
+                width: 359px;
+                @media screen and (max-width:450px) {
+                    width: 300px;
+                }
+                box-sizing: border-box;
+                position: absolute;
+                top: 30%;
+                left: -100px;
+                @media screen and (max-width:1280px) {
+                    left: 20px;
+                }
+                .f {
+                    background: #ffffff;
+                    position: relative;
+                    padding: 50px;
+                    img {
+                       width: 100%;
+                    }
+                    
+                }
+                .s {
+                    padding: 25px;
+                    padding-bottom: 50px;
+                    position: relative;
+                    background: #ffffff;
+                    .img-bg {
+                        z-index: 1;
+                        background: #8FA6B6;
+                        opacity: 0.16;
+                        mix-blend-mode: normal;
+                    }
+                    
+                    p{
+                        
+                        font-family: Average;
+                        
+                        font-size: 20px;
+                        line-height: 33px;
+                        /* or 165% */
+    
+                        
+                        text-align: center;
+    
+                        color: #516878;
+                    }
+                }
+            }
+            .second-absolute {
+                
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                z-index: 1000;
+                justify-content: center;
+                align-items: flex-end;
+                
+                @media screen and (max-width:1280px){
+                    width: 359px;
+                    height: 317px;
+                    display: block;
+                    top: calc(30% + 317px);
+                    left: 20px;
+                }
+                .img-bg{
+                    z-index: 100;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .sec {
+                    width: 359px;
+                    height: 317px;
+                    box-sizing: border-box;
+                    padding: 50px;
+                    @media screen and (max-width:450px) {
+                        width: 300px;
+                    }
+                    filter: drop-shadow(-22.8px -2.8px 35px rgba(83, 100, 111, 0.19));
+                   position: relative;
+                   margin-bottom: -100px;
+                   display: flex;
+                   align-items: flex-end;
+                    p{
+                        color: #000000;
+                        text-align: center;
+                        position: relative;
+                        z-index: 105;
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+}
+.awards-and-stuff{
+    background: #F6F6F6;
+    padding: 80px 0px;
+}

@@ -764,6 +764,10 @@
   padding-top: 50px;
   padding-bottom: 105px;
   .inner {
+    .slick-track {
+      display: flex;
+      align-items: stretch;
+    }
     h2 {
       text-align: center;
       margin-bottom: 20px;
@@ -791,7 +795,7 @@
     .slider-blocks {
       
       .slick-slide {
-        height:100%;
+       height: unset;
         margin: 0px 10px;
         
       }
@@ -1310,7 +1314,8 @@ footer {
             height: 213px;
           }
           @media screen and (max-width:565px){
-            width: 100%;
+            width: 80vw;
+            margin: 0 auto;
           }
           
         }

@@ -101,7 +101,10 @@ h2 {
 font-style: normal;
 font-weight: normal;
 @include fluid-font(30,62 );
-
+@media screen and (max-width:768px){
+	font-size: 46px;
+	line-height: 50px;
+}
 /* identical to box height, or 98% */
 
 
@@ -136,11 +139,23 @@ color: #2F3256;
 h6 {
     font-family: Average;
 
-    @include fluid-font(16,26);
-    line-height: 35px;
+   font-size: 26px;
+    line-height: 48px;
 /* identical to box height, or 187% */
 
 
+}
+h5 {
+	font-family: Average;
+
+	font-size: 35.8906px;
+	line-height: 67px;
+	/* or 187% */
+
+
+	text-align: center;
+
+	color: #000000
 }
 img {
 	height: auto;

@@ -13,13 +13,13 @@ function menuClick() {
     if (!$('.header__wr-nav').hasClass("active")) {
        
         $('.header__wr-nav').toggleClass("active");
-        if ($(window).width()>768){
+        if ($(window).width()>565){
         $('.header__wr-nav').find(".header__nav").slideDown(300);
         }
     } else {
       
         $('.header__wr-nav').toggleClass("active");
-        if ($(window).width()>768){
+        if ($(window).width()>565){
         $('.header__wr-nav').find(".header__nav").slideUp(300);
         }
     }
