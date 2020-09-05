@@ -125,7 +125,7 @@ main{
 
   &__wr-burger {
       display: none;
-      
+      cursor: pointer;
      
           display: flex;
           align-items: center;
@@ -171,14 +171,14 @@ main{
   z-index: 200;
  
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0px;
   
   left: 0;
   width: 50%;
   background-color: #ffff;
   
-  height: 1000px;
+  height: 100vh;
   box-sizing: border-box;
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.13);
  
