@@ -264,6 +264,7 @@
         .affiliations-block{
             display: grid;
             grid-template-columns: repeat(3,1fr);
+            row-gap: 50px;
             @media screen and (max-width:1280px) {
                 grid-template-columns: repeat(1,1fr);
             }
@@ -313,6 +314,7 @@
             }
         }
         .media-appearences {
+            margin-top: 50px;
             .line {
                 background: #000000;
                 mix-blend-mode: normal;
@@ -356,7 +358,7 @@
                     font-family: Average;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 31.41px;
+                    font-size: 31px;
                     line-height: 44px;
                     /* or 140% */
     
@@ -430,6 +432,7 @@
             }
         }
         .cir {
+            z-index: -1;
             @media screen and(max-width:565px) {
                 display: none;
             }

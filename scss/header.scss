@@ -63,7 +63,7 @@ main{
       align-items: center;
       justify-content: space-between;
       height: 100%;
-      @media screen and (max-width:565px){
+      @media screen and (max-width:768px){
         flex-direction: row-reverse;
       }
       
@@ -100,7 +100,7 @@ main{
     @media screen and (max-width:1280px){
       max-width: 190px;
     }
-    @media screen and (max-width:565px){
+    @media screen and (max-width:768px){
       max-width: unset;
       width: unset;
       padding: 30px;
@@ -116,9 +116,9 @@ main{
 
   &__nav {
     height: 100%;
-    @media screen and (max-width: 1921px){
+    
       height: unset;
-    }
+    
   }
 
   // .header__wr-burger
@@ -126,12 +126,12 @@ main{
   &__wr-burger {
       display: none;
       
-      @media screen and (max-width: 1921px){
+     
           display: flex;
           align-items: center;
           justify-content: center;
           
-      }
+      
       
 
   }
@@ -144,50 +144,58 @@ main{
    margin-right: 0px;
   }
 }
+.burger {
+  cursor: pointer;
+}
 .header__wr-nav.active {
   .nav {
     //display: flex !important;
     
-    @media screen and (max-width:565px) {
+    
       
-      right: 0px;
-      transition: right 0.5s;
-    }
+      left: 0%;
+      transition: left 0.5s;
+      right: unset;
+      @media screen and (max-width:768px) {
+        left: unset;
+        
+        right: 0%;
+        transition: right 0.5s;
+      }
   }
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  z-index: 200;
  
-  @media screen and (min-width: 1921px){
-      display: flex !important;
-  }
-  @media screen and (max-width: 1921px){
-      display: none;
-      position: absolute;
-      top: 108px;
-      @media screen and (max-width:768px) {
-        padding-bottom: 500px;
-        top: 75px;
-      }
-      left: 0;
-      width: 100%;
-      background-color: #ffff;
-      padding: 0 0 25px;
-      box-sizing: border-box;
-      box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.13);
-  }
-  @media screen and (max-width:565px) {
+  display: none;
+  position: absolute;
+  top: 0px;
+  
+  left: 0;
+  width: 50%;
+  background-color: #ffff;
+  
+  height: 1000px;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.13);
+ 
     left: unset;
     display: block;
-    right: -100%;
-    transition: right 0.5s;
-  }
-  @media screen and (max-width: $tablet){
-   //top: 75px;
-  }
+    left: -50%;
+    transition: left 0.5s;
+    right: unset;
+    @media screen and (max-width:768px) {
+     
+     
+      width: 100%;
+      left: unset;
+      transition: right 0.5s;
+      right: -100%;
+    }
+  
   @media screen and (max-width: $mobile){
      // top: 60px;
   }
@@ -195,13 +203,24 @@ main{
   ul{
     width: 100%;
     height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      @media screen and (max-width: 1921px){
-          flex-direction: column;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 150px 0px;
+    .my-burger{
+      position: absolute;
+      left: 40px;
+      top: 50px;
+      @media screen and (max-width:768px) {
+        left: unset;
+        top: 30px;
+        right: 40px;
       }
-    
+      .menu-txt{
+        display: none;
+      }
+    }
   }
   li{
     margin: 0 auto;
@@ -209,7 +228,7 @@ main{
      
       margin: 0px;
     }
-    height: 100%;
+    
       font-family: Arial;
       font-style: normal;
       
@@ -224,7 +243,9 @@ main{
       position: relative;
       box-sizing: border-box;
       a {
+        padding-left: 50px;
         height: 100%;
+        padding-bottom: 20px;
         display: flex;
         align-items: center;
         position: relative;
@@ -233,10 +254,11 @@ main{
         font-weight: normal;
         font-size: 30px;
         line-height: 41px;
-        @media screen and (max-width:768px) {
+     
           width: fit-content;
           justify-content: flex-start;
-        }
+          
+        
 /* identical to box height, or 133% */
 
 
@@ -256,30 +278,20 @@ color: #2F3256;
         
         transition: height .25s ;
     }
-    a:hover, a:focus {
-      text-shadow: 0px 0px 1px #061622;
-    }
-    a:focus::after {
-      height: 3px;
-    }
-    a:hover:after {
-      
-      height: 3px;
-     
-      
-      transition: height .25s ;
-    }
+   
+    
+    
     
 
 	 /* optional hover classes used with anmiation */
 	  
-      @media screen and (max-width: 1921px){
+      
           margin-right: 0;
           
           width: 100%;
-          padding: 0 15px;
+         
 
-      }
+      
       &:last-child{
         margin-right: 0px;
           @media screen and (max-width: $tablet){
@@ -291,11 +303,11 @@ color: #2F3256;
           text-align: center;
          
           color: #000;
-          @media screen and (max-width: 1921px){
-              padding: 10px 0;
+         
+              
               display: block;
               
-          }
+          
 
       }
   }
@@ -316,7 +328,7 @@ color: #2F3256;
 .menu-txt {
   margin-left: 20px;
   font-size : 22px;
-  @media screen and (max-width:565px){
+  @media screen and (max-width:768px){
     display: none;
   }
 }
@@ -338,7 +350,7 @@ color: #2F3256;
   img {
     max-width: 303px;
     width: 100%;
-    @media screen and (max-width:565px){
+    @media screen and (max-width:768px){
       margin-right: auto;
     }
   }

@@ -138,7 +138,7 @@ color: #2F3256;
 }
 h6 {
     font-family: Average;
-
+	@include fluid-font(20 ,26 );
    font-size: 26px;
     line-height: 48px;
 /* identical to box height, or 187% */
@@ -148,7 +148,8 @@ h6 {
 h5 {
 	font-family: Average;
 
-	font-size: 35.8906px;
+	
+	@include fluid-font(25,35 );
 	line-height: 67px;
 	/* or 187% */
 
@@ -159,4 +160,9 @@ h5 {
 }
 img {
 	height: auto;
+}
+body {
+	*{
+		outline: none;
+	}
 }

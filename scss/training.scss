@@ -232,6 +232,9 @@
 }
 .grid-block {
     padding: 120px 0px ;
+    @media screen and (max-width:768px) {
+        padding-top: 0px;
+    }
     background: #2F3256;
     .inner {
         display: grid;
@@ -250,7 +253,7 @@
            flex-direction: column;
         }
         .block {
-            max-width: 434px;
+            
             
             width: 100%;
             margin: 0 auto;
@@ -270,6 +273,7 @@
                 color: #FFFFFF;
                 font-size: 35px;
                 margin-bottom: 20px;
+                line-height: 40px;
             }
             p{
                 color: #FFFFFF;
@@ -299,10 +303,12 @@
             height: 544px;
             
             grid-column-end: 3;
+            
             @media screen and (max-width:768px) {
                 grid-column-end: 2;
                 width: 100vw;
                 margin-left: -20px;
+                margin-bottom: 60px;
             }
             display: flex;
             align-items: center;

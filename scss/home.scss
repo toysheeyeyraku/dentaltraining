@@ -230,6 +230,103 @@
 .home-block-2 {
   position: relative;
   overflow: hidden;
+  .relat {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .txt-abs-block {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media screen and (max-width:1700px) {
+      align-items: flex-start;
+      
+    }
+    @media screen and (max-width:1280px) {
+     align-items: center;
+    }
+    @media screen and (max-width:600px) {
+      align-items: flex-end;
+     }
+    .in {
+      max-width: 347px;
+      @media screen and (max-width:1500px) {
+        max-width: 203px;
+      }
+     
+     
+      @media screen and (max-width:1700px) {
+        margin-top: 30px;
+        
+      }
+      margin-left: 50px;
+      
+     
+      @media screen and (max-width:1280px) {
+        max-width: 347px;
+        margin-left: 20px;
+      }
+      @media screen and (max-width:768px){
+        max-width: 203px;
+        margin-left: 20px;
+       
+      }
+      @media screen and (max-width:600px) {
+        margin-bottom: 20px;
+        max-width: unset;
+        margin-left: 15px;
+      }
+      
+      h6 {
+        font-family: Average;
+  
+        font-size: 13.6418px;
+        line-height: 35px;
+        /* identical to box height, or 474% */
+  
+        text-align: left;
+       
+        letter-spacing: 1.12999px;
+        text-transform: uppercase;
+        @media screen and (max-width:768px) {
+          font-size: 11px;
+        }
+        color: #B3924A;
+      }
+      h5{
+        font-family: Average;
+        
+        font-size: 46px;
+        line-height: 61px;
+        @media screen and (max-width:1500px) {
+          font-size: 26px;
+          line-height: 36px;
+        }
+        
+        @media screen and (max-width:768px) {
+          font-size: 26px;
+          line-height: 36px;
+        }
+        @media screen and (max-width:600px) {
+         font-size: 20px;
+        }
+        /* or 133% */
+        text-align: left;
+        
+  
+        /* blue */
+  
+        color: #2F3256;
+      }
+    }
+
+  }
   .inner {
     display: flex;
     @media screen and (max-width:1280px) {
@@ -264,6 +361,7 @@
     }
     .second {
       position: absolute;
+      
       @media screen and (max-width:1280px) {
         position: relative;
       }
@@ -290,6 +388,9 @@
 .home-block-3 {
   position: relative;
   padding: 150px 0px;
+  @media screen and (max-width:565px) {
+    padding: 100px 0px;
+  }
   padding-bottom: 200px;
   .inner {
       .notebook {
@@ -442,9 +543,9 @@
   .circle1{
     position: absolute;
     z-index: 0;
-    width: 70%;
-    height: 70%;
-    top: -10%;
+    width: 70vw;
+    height: 70vw;
+    top: 10%;
     left: -30%;
     border: 2px solid #B3924A;
     border-radius: 50%;;
@@ -455,10 +556,10 @@
   .circle2{
     position: absolute;
     z-index: 0;
-    width: 70%;
-    height: 70%;
-    bottom: -30%;
-    right: -30%;
+    width: 70vw;
+    height: 70vw;
+    bottom: 50%;
+    right: -40%;
     border: 2px solid #B3924A;
     border-radius: 50%;;
     @media screen and (max-width:991px) {
@@ -642,9 +743,7 @@
     }
     
     display: flex;
-    @media screen and (max-width:450px){
-      display: none;
-    }
+   
     align-items: center;
     top: 0px;
     height: 100%;
@@ -660,6 +759,10 @@
       @media screen and (max-width: 565px){
         height: 75px;
         width: 75px;
+      }
+      @media screen and (max-width: 400px){
+        height: 45px;
+        width: 45px;
       }
      
     }
@@ -761,7 +864,7 @@
   }
 }
 .home-block-9{
-  padding-top: 50px;
+  padding-top: 80px;
   padding-bottom: 105px;
   .inner {
     .slick-track {
@@ -804,6 +907,7 @@
       position: relative;
       .arrow {
         display: hidden;
+        cursor: pointer;
         @media screen and (max-width:1280px) {
           display: flex;
         }
@@ -930,6 +1034,7 @@
       margin-bottom: 40px;
 
     }
+    
     max-width: 651px;
    
     width: 100%;
@@ -957,6 +1062,11 @@
     position: relative;
     overflow: hidden;
     padding: 150px 0px;
+    .img-bg {
+      img {
+        object-position: 80%;
+      }
+    }
     @media screen and (max-width:565px){
       height: 400px;
       padding: 0px;
@@ -1027,39 +1137,14 @@
         }
       }
     }
-    .play {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .in {
-        width: 175px;
-        height: 175px;
-        @media screen and (max-width:768px){
-         width: 100px;
-         height: 100px;
-        }
-        background-color: #FFFFFF;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        img {
-          width: 40%;
-          height: 40%;
-        }
-      }
-    }
+  
   }
   
   }
 }
 .jessica-block {
   padding: 150px 0px;
+  
   @media screen and (max-width:768px) {
     padding: 100px 0px;
     padding-bottom: 45px;
@@ -1076,10 +1161,13 @@
   }
   .slider-jes-wrapper {
     position: relative;
+    
   }
   .inner {
     position: relative;
+    
     .jessica-subnails {
+      z-index: 300;
       position: absolute;
       top: 0px;
       left: 0px;
@@ -1088,9 +1176,13 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      @media screen and (max-width:1600px){
+      @media screen and (max-width:1700px){
         align-items: flex-start;
         top: 50px;
+      }
+      @media screen and (max-width:1200px){
+        left: unset;
+        right: -10px;
       }
       @media screen and (max-width:991px){
         display: none;
@@ -1100,13 +1192,17 @@
         flex-direction: column;
       }
       .thubnail-blocks{
-        
+        .slick-track {
+          transform :none !important;
+        }
         .thubnail-block{
           position: relative;
           z-index: 100;
           display: flex;
-          align-items: stretch;
-          justify-content: flex-start;
+          align-items: center;
+          justify-content: flex-end;
+          outline: none;
+          width: 50px !important;
           &:hover{
             cursor: pointer;
           }
@@ -1114,21 +1210,38 @@
           &:last-child{
             margin-bottom: 0px;
           }
-          h6{
-            color: #2F3256;
-            position: relative;
-           
-            line-height: 24px;
-            box-sizing: border-box;
-            width: 60px;
+         
+            h6{
+              display: none;
+              color: #2F3256;
+              position: relative;
+            
+              line-height: 24px;
+              box-sizing: border-box;
+              width: 60px;
             
           }
           .line {
             width: 1px;
-              
-              top: 0px;
-              right: 0px;
-              background: #2F3256;
+           height: 31px;
+           top: 0px;
+           right: 0px;
+           background: #000000;
+           opacity: 0.25;
+        
+        }
+        
+        }
+        .thubnail-block.slick-current{
+            h6{
+              display: block;
+            }
+            .line {
+              width: 1px;
+            opacity: 1;
+            top: 0px;
+            right: 0px;
+            background: #000000;
           }
         }
       }
@@ -1150,7 +1263,7 @@
         position: relative;
         display: block;
         z-index: 100;
-        margin-top: 30%;
+        margin-top: 215px;
         margin-right: -15px;;
         width: 70px;
         height: 70px;
@@ -1164,7 +1277,7 @@
         display: block;
         z-index: 100;
         transform: rotateZ(180deg);;
-        margin-top: 30%;
+        margin-top: 215px;
         margin-left: -15px;;
         width: 70px;
         height: 70px;
@@ -1176,10 +1289,15 @@
     }
     .slick-slider-jessica {
       @media screen and (max-width:991px) {
-        padding: 20px;
+        padding: 0px;
         }
       * {
         overflow: visible;
+      }
+      .slick-list{
+        @media screen and (max-width:991px){
+          overflow: hidden;
+        }
       }
       .slick-track {
         display: flex;
@@ -1213,12 +1331,15 @@
             height: 500px;
             margin-left: 0px;
             margin: 0 auto;
+            img {
+              height: 100%;
+            }
            
             
           }
           @media screen and (max-width:450px) {
            
-            height: 300px;
+            
           }
           img {
             width: 100%;
@@ -1266,6 +1387,7 @@
         }
       }
     }
+   
   }
 }
 footer {
