@@ -121,6 +121,12 @@ $('.thubnail-blocks').slick({
     centerMode: false,
     focusOnSelect: true
   });
+  $(document).mouseup(function (e) {
+    var container = $(".nav");
+    if (container.has(e.target).length === 0){
+        container.parent().removeClass("active");
+    }
+});
         
 });
 
