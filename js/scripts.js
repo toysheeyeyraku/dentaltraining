@@ -96,6 +96,21 @@ function menuClick() {
    
   });
   
+  $( ".cross-img-video-modal" ).on( "click", function() {
+    
+    $('.youtube-video').each(function(index) {
+        $(this).attr('src', '');
+        return false;
+      });
+    
+
+    $( ".modal-video" ).removeClass("active");
+  });
+  $( ".play" ).on( "click", function() {
+    let video_link = $(this).children(":first").attr('data-video-src') + '?autoplay=1';
+    $( ".modal-video" ).children(":first").attr("src",video_link);
+    $( ".modal-video" ).addClass("active");
+  });
   
 
 $('.thubnail-blocks').slick({
